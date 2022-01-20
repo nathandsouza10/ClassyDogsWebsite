@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>ClassyDogs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- nav bar -->
+    <header>
+        <!-- <a href="./index.html" class="logo">ClassyDogs</a> -->
+        <img src="./images/logo.png" class="logo", width="20%">
+        <ul>
+            <a href="https://discord.gg/EJWX2JvyBz" target="_blank"><img class="icon" src="./images/icons/discord.png" alt="discord"></a>
+            <a href="https://opensea.io" target="_blank"><img class="icon"src="./images/icons/opensea.png" alt=""></a>
+        </ul>
+    </header>
+
+    <section>
+        <img src="./images/stars.png" id="stars">
+        <img src="./images/moon.png" id="moon">
+        <img src="./images/buildings_backdrop.png" id="mountains_behind">
+        <h2 id="text">Stay Classy...</h2>
+        <a href="#About" id="btn">Explore</a>
+        <img src="./images/buildings_front.png" id="mountains_front">
+    </section>
+
+
+    <div class="About">
+        <!-- left part of about div -->
+        <div class="welcome" >
+            <div class="welcome_info">
+                <h2>Welcome to the ClassyDogs Kennel</h2>
+                <p>
+                    It happened one day not quite today, but not so far off it couldn’t be tomorrow... 
+                <br>    
+                    Dogs of Earth discovered the existence of Woofholes! Tears in the fabric of space/time, resonating at frequencies only perceivable to the canine senses, leading to a parallel Earth. This planet was exactly like ours in all respects, filled with furnished cities and buildings, but completely empty of mankind.
+                <br>   
+                    Having spent the past hundred centuries observing their humans and learning how to (and more importantly, how not to) run a planet, brave pups began to venture through the Woofholes. They’ve begun exploring this new and empty Earth and colonising it’s mysterious, silent cities, untouched jungles, and pristine landscape. 
+                </p>
+            </div>
+           
+        </div>
+
+        <!-- right part of the about div -->
+        <div class="welcome">
+            <div class="welcome_images">
+                <img id="welcome_img1" src="./images/dogs/dog_1.png" >
+                <img id="welcome_img2"src="./images/dogs/dog_2.png" >
+                <img id="welcome_img3"src="./images/dogs/dog_3.png" >   
+                <img id="welcome_img4" src="./images/dogs/dog_4.png">      
+                <img id="welcome_img5" src="./images/dogs/dog_5.png">    
+
+            </div>
+          </div>
+        
+    </div>
+    
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';   
+            moon.style.top = value * 1.5 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5+ 'px';
+        })
+    </script>
+
+
+
+</body>
+</html>

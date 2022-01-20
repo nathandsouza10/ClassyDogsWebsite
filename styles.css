@@ -1,0 +1,184 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+
+header{
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+
+}
+
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    margin-left: 20px;
+}
+
+header ul li a{
+    color: #fff;
+}
+
+
+header ul li a:hover{
+    background: #fff;
+    color: #2b1055;
+}
+
+.icon{
+    padding-left: 20px;
+    width: 50px;
+    text-decoration: none;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon{
+    mix-blend-mode: screen;
+}
+
+
+section img#mountains_front{
+    z-index: 10;
+}
+
+
+#text{
+    position: absolute;
+    right: -620px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5em;
+    z-index: 9;
+}
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    transform: translateY(120px);
+}
+
+.About{
+    display: flex;
+    text-align: center;
+    background: #08000a;
+    font-family: 'Amatic SC', cursive;
+}
+
+.welcome_info{
+    flex-basis: 100px;
+    margin: 10px;
+}
+.About h2{
+    font-size: 7em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.About p{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+
+.welcome_images{
+    padding-top: 50px;
+}
+.welcome_images *{
+    margin-top: 20px;
+    margin-right: 15px;
+	border-radius: 7%;
+	overflow: hidden;
+	transform: translatey(0px);
+    width: 25%;
+}
+
+#welcome_img1{
+    animation: float 6s ease-in-out infinite;
+}
+
+#welcome_img2{
+    animation: float 10s ease-in-out infinite;
+}
+
+#welcome_img3{
+    animation: float 3s ease-in-out infinite;
+}
+
+#welcome_img4{
+    animation: float 12s ease-in-out infinite;
+}
+
+#welcome_img5{
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
