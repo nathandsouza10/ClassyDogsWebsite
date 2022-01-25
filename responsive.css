@@ -91,6 +91,27 @@
         width: 175%;
         right: 140px;
     }
+    
+    .team h2{
+      font-size: 12vw;
+      margin-bottom: 3vh;
+      color: #fff;
+  }
+
+    .job_description{
+      font-size: 7vw;
+  }
+   
+  .name{
+      font-size: 5vw;
+  }
+  
+  .founder_description{
+      font-size: 4vw;
+  }
+  
+
+
 }
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
