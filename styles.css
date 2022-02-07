@@ -176,6 +176,65 @@ section img#mountains_front{
     margin-right: 40px;
     margin-left: 40px;
 }
+
+/* Mint */
+.Mint{
+    text-align: center;
+    background: #08000a;
+    font-family: 'Amatic SC', cursive;
+}
+
+.Mint h2{
+    font-size: 6vw;
+    margin-bottom: 3vh;
+    color: #fff;
+    position: relative;
+}
+
+.Mint #quantity{
+    font-size: 2vw;
+    margin-bottom: 3vh;
+    color: #fff;
+    position: relative;
+}
+
+.mint_counter{
+    display: flex;
+    position: relative;
+    left: 45%;
+    margin-bottom: 20px;
+}
+
+#btn_decrease{
+    width: 70px;
+    height: 50px;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+#btn_increase{
+    margin-left:20px;
+    width: 70px;
+    height: 50px;
+    font-size: 12px;
+}
+
+.Mint h3{
+    font-size: 1.4vw;
+    margin-bottom: 1vh;
+    color: #fff;
+}
+
+#btn_Mint{
+    font-family: 'Amatic SC', cursive;
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 3vh;
+}
+
 /* Tech Spec */
 
 .technical_specs{
