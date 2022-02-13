@@ -346,7 +346,6 @@ section img#mountains_front{
 }
 
 .team h2{
-
     font-size: 6vw;
     margin-bottom: 3vh;
     color: #fff;
@@ -355,18 +354,18 @@ section img#mountains_front{
 
 .column {
     float: left;
-    width: 33%;
+    width: 16.6%;
     margin-bottom: 16px;
     padding: 0 8px;
 }
 
 .job_description{
-    font-size: 3vw;
+    font-size: 2vw;
     color: #fff;
 }
  
 .name{
-    font-size: 2.3vw;
+    font-size: 2vw;
     color: #fff;
 }
 
