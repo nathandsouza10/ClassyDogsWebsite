@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#08000a, #08000a);
+    color: white;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.disclaimer {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.terms_and_conditions {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+button {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3vw;
+    background-color: #2b1055;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 7%;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+button:hover {
+    background-color: #08000a;
+    color: white;
+    text-decoration: none;
+}

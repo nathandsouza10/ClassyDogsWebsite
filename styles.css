@@ -1,20 +1,21 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
-.logo{
+
+.logo {
     width: 12%;
 }
 
-body{
+body {
     min-height: 100vh;
     overflow-x: hidden;
     background: linear-gradient(#08000a, #08000a);
 }
 
-header{
+header {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,32 +27,32 @@ header{
     z-index: 100000;
 }
 
-header ul{
+header ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li{
+header ul li {
     margin-left: 20px;
 }
 
-header ul li a{
+header ul li a {
     color: black;
 }
 
-header ul li a:hover{
+header ul li a:hover {
     background: black;
     color: #08000a;
 }
 
-.icon{
+.icon {
     padding-left: 20px;
     width: 50px;
     text-decoration: none;
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -62,17 +63,17 @@ section{
     overflow: hidden;
 }
 
-section::before{
+section::before {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top,#08000a,transparent);
+    background: linear-gradient(to top, #08000a, transparent);
     z-index: 1000;
 }
 
-section img{
+section img {
     position: absolute;
     top: 0;
     left: 0;
@@ -82,15 +83,15 @@ section img{
     pointer-events: none;
 }
 
-section img #moon{
+section img #moon {
     mix-blend-mode: screen;
 }
 
-section img#mountains_front{
+section img#mountains_front {
     z-index: 10;
 }
 
-#text{
+#text {
     position: absolute;
     right: -620px;
     color: #fff;
@@ -98,10 +99,9 @@ section img#mountains_front{
     font-size: 7vh;
     z-index: 9;
     font-family: 'Amatic SC', cursive;
-
 }
 
-#btn{
+#btn {
     font-family: 'Amatic SC', cursive;
     text-decoration: none;
     display: inline-block;
@@ -113,7 +113,7 @@ section img#mountains_front{
     transform: translateY(120px);
 }
 
-.About{
+.About {
     display: flex;
     text-align: center;
     background: #08000a;
@@ -122,87 +122,88 @@ section img#mountains_front{
     margin-bottom: 20px;
 }
 
-.welcome_info{
+.welcome_info {
     flex-basis: 100px;
-
 }
 
-.About h2{
+.About h2 {
     font-size: 6vw;
     margin-bottom: 3vh;
     color: #fff;
 }
 
-.About p{
+.About p {
     font-size: 1.5vw;
     color: #fff;
 }
-.welcome_images{
+
+.welcome_images {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.welcome_images *{
+
+.welcome_images * {
     margin-top: 20px;
-    margin-right: 15px; 
-	border-radius: 7%;
-	overflow: hidden;
-	transform: translatey(0px);
+    margin-right: 15px;
+    border-radius: 7%;
+    overflow: hidden;
+    transform: translatey(0px);
     width: 25%;
 }
 
-#welcome_img1{
+#welcome_img1 {
     animation: float 6s ease-in-out infinite;
 }
 
-#welcome_img2{
+#welcome_img2 {
     animation: float 10s ease-in-out infinite;
 }
 
-#welcome_img3{
+#welcome_img3 {
     animation: float 3s ease-in-out infinite;
 }
 
-#welcome_img4{
+#welcome_img4 {
     animation: float 12s ease-in-out infinite;
 }
 
-#welcome_img5{
+#welcome_img5 {
     animation: float 7s ease-in-out infinite;
 }
 
-
-.line_break{
+.line_break {
     margin-top: 30px;
     margin-right: 40px;
     margin-left: 40px;
 }
+
+
 /* Tech Spec */
 
-.technical_specs{
+.technical_specs {
     text-align: center;
     background: #08000a;
     font-family: 'Amatic SC', cursive;
 }
 
-
-.technical_specs h2{
+.technical_specs h2 {
     font-size: 6vw;
     margin-bottom: 3vh;
     color: #fff;
 }
 
-.technical_specs p{
+.technical_specs p {
     font-size: 1.5vw;
     color: #fff;
     margin-bottom: 5vh;
 }
 
-.image_network{
+.image_network {
     position: relative;
     z-index: 1;
 }
 
-#network_img{
+#network_img {
     width: 60%;
 }
 
@@ -212,43 +213,73 @@ section img#mountains_front{
     width: 4%;
 }
 
-.images *:hover{
+.images *:hover {
     transform: scale(1.5);
+}
+
+.opensea_section {
+    margin-top: 4vh;
+}
+
+#btn_opensea {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3vw;
+    background-color: #2b1055;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 7%;
+    transition-duration: 0.4s;
+}
+
+#btn_opensea:hover {
+    background-color: #08000a;
+    color: white;
 }
 
 
 /* Roadmap */
 
-.roadmap_description{
+.roadmap_description {
     text-align: center;
     background: #08000a;
     font-family: 'Amatic SC', cursive;
     padding-left: 30px;
     margin-top: 20px;
 }
-.roadmap_description h2{
+
+.roadmap_description h2 {
     font-size: 6vw;
     margin-bottom: 3vh;
     color: #fff;
 }
-.roadmap_description p{
+
+.roadmap_description p {
     font-size: 1.5vw;
     color: #fff;
 }
 
 * {
     box-sizing: border-box;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline {
     position: relative;
     max-width: 1100px;
     margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -257,18 +288,22 @@ section img#mountains_front{
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .container {
+}
+
+
+/* Container around content */
+
+.container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
+}
+
+
+/* The circles on the timeline */
+
+.container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -279,20 +314,26 @@ section img#mountains_front{
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
+}
+
+
+/* Place the container to the left */
+
+.left {
     left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
+}
+
+
+/* Place the container to the right */
+
+.right {
     left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
+}
+
+
+/* Add arrows to the left container (pointing right) */
+
+.left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -303,10 +344,12 @@ section img#mountains_front{
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
+}
+
+
+/* Add arrows to the right container (pointing left) */
+
+.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -317,26 +360,29 @@ section img#mountains_front{
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
+}
+
+
+/* Fix the circle for containers on the right side */
+
+.right::after {
     left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
+}
+
+
+/* The actual content */
+
+.content {
     padding: 20px 30px;
     font-family: 'Amatic SC', cursive;
     background-color: white;
     position: relative;
     border-radius: 6px;
-  }
-  
-
+}
 
 
 /* Meet the Team */
+
 .team {
     text-align: center;
     background: #08000a;
@@ -345,63 +391,126 @@ section img#mountains_front{
     margin-top: 20px;
 }
 
-.team h2{
+.team h2 {
     font-size: 6vw;
     margin-bottom: 3vh;
     color: #fff;
 }
 
-
-.column {
+.card {
     float: left;
     width: 16.6%;
     margin-bottom: 16px;
     padding: 0 8px;
 }
 
-.job_description{
-    font-size: 2vw;
-    color: #fff;
-}
- 
-.name{
+.job_description {
     font-size: 2vw;
     color: #fff;
 }
 
-.founder_description{
-    font-size: 1.5vw;
+.name {
+    font-size: 2vw;
     color: #fff;
 }
+
+.founder_description {
+    font-size: 1.3vw;
+    color: #fff;
+}
+
 
 /* Some left and right padding inside the container */
+
 .container_card {
-padding: 0 16px;
+    padding: 0 16px;
 }
 
-.card img{
+.card img {
     border-radius: 7%;
 }
 
+
+/* contract */
+
+.contract {
+    margin-top: 43vh;
+    text-align: center;
+    font-size: 1.4vw;
+    color: #fff;
+    font-family: 'Amatic SC', cursive;
+}
+
+.contract a {
+    color: white;
+}
+
+.contract a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* footer */
+
+.footer {
+    text-align: center;
+    background: #08000a;
+    font-family: 'Amatic SC', cursive;
+    padding-left: 30px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.footer img {
+    width: 45%;
+}
+
+.footer p {
+    font-size: 2vw;
+    margin-bottom: 3vh;
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #2b1055;
+}
+
+.footer_item {
+    float: left;
+    width: 33.33%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    text-align: center;
+}
+
+
 /* Display the columns below each other instead of side by side on small screens */
+
 @media screen and (max-width: 650px) {
-    .column {
+    .card {
         width: 100%;
         display: block;
     }
 }
 
 @keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
 }
