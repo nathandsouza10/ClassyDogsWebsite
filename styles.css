@@ -285,6 +285,36 @@ section img#mountains_front {
 }
 
 
+/* Our Story */
+
+.Our_Story {
+    text-align: center;
+    background: #08000a;
+    font-family: 'Amatic SC', cursive;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+.Our_Story h2 {
+    font-size: 6vw;
+    margin-bottom: 3vh;
+    color: #fff;
+}
+
+.Our_Story #btn_story {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3vw;
+    background-color: white;
+    border: none;
+    color: #2b1055;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 7%;
+}
+
+
 /* Meet the Team */
 
 .team {
