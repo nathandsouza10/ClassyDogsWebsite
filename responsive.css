@@ -36,6 +36,14 @@
         padding-top: 0.2vh;
         font-size: 2.5vw;
     }
+    .Our_Story h2 {
+        font-size: 10vw;
+        margin-bottom: 10px;
+    }
+    .Our_Story p {
+        padding-top: 0.2vh;
+        font-size: 2.5vw;
+    }
     .card {
         float: left;
         width: 33.3%;
@@ -92,7 +100,6 @@
         padding-top: 10px;
         font-size: 4.5vw;
     }
-    
     .team h2 {
         font-size: 12vw;
         margin-bottom: 3vh;

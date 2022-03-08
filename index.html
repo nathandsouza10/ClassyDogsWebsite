@@ -30,8 +30,26 @@
         <img src="./images/stars.png" id="stars">
         <img src="./images/moon.png" id="moon">
         <img src="./images/buildings_backdrop.png" id="mountains_behind">
+        <h2 id="intro_text">
+            Building an entertainment enterprise by fusing the <br> worlds of NFTs and entertainment.
+        </h2>
+        <div id="mouse-scroll">
+            <div class="mouse">
+                <div class="mouse-in"></div>
+            </div>
+            <div>
+                <span class="down-arrow-1"></span>
+                <span class="down-arrow-2"></span>
+                <span class="down-arrow-3"></span>
+            </div>
+        </div>
+
+
+
         <h2 id="text">Stay Classy...</h2>
         <img src="./images/buildings_front.png" id="mountains_front">
+
+
     </section>
 
     <div class="About">
@@ -120,35 +138,38 @@
 
     <hr class="line_break">
 
-    <div class="roadmap">
-        <div class="roadmap_description">
-            <h2>
-                Roadmap
-            </h2>
-            <p>
-                This is what has been envisioned...
-            </p>
-            <a href="./whitepaper.pdf" target="_blank">
-                <button id="btn_roadmap">
+    <div class="roadmap_and_story">
+        <div class="roadmap">
+            <div class="roadmap_description">
+                <h2>
+                    Roadmap
+                </h2>
+                <p>
+                    This is what has been envisioned...
+                </p>
+                <a href="./whitepaper.pdf" target="_blank">
+                    <button id="btn_roadmap">
+                        <span>
+                            WhitePaper
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="Our_Story">
+            <h2>Our Story</h2>
+            <p>Find out More about us...</p>
+            <a href="./story.pdf" target="_blank">
+                <button id="btn_story">
                     <span>
-                        WhitePaper
+                        Read More
                     </span>
                 </button>
             </a>
         </div>
     </div>
 
-    <hr class="line_break">
-
-    <div class="Our_Story">
-        <h2>Our Story</h2>
-        <a href="./story.pdf">
-            <button id="btn_story">
-                Read More
-            </button>
-
-        </a>
-    </div>
 
     <hr class="line_break">
 
@@ -255,18 +276,21 @@
         let moon = document.getElementById('moon');
         let mountains_behind = document.getElementById('mountains_behind');
         let mountains_front = document.getElementById('mountains_front');
+        let intro_text = document.getElementById('intro_text');
+        let scroll_wheel = document.getElementById('mouse-scroll');
         let text = document.getElementById('text');
         let header = document.querySelector('header');
         window.addEventListener('scroll', function() {
             let value = window.scrollY;
             stars.style.left = value * 0.25 + 'px';
             moon.style.top = value * 2 + 'px';
+            intro_text.style.marginBottom = value * 10 + 'px';
             mountains_behind.style.top = value * 0.5 + 'px';
             mountains_front.style.top = value * 0 + 'px';
             text.style.marginRight = value * 4 + 'px';
             text.style.marginTop = value * 1.5 + 'px';
-            btn.style.marginTop = value * 1.5 + 'px';
             header.style.top = value * 0.5 + 'px';
+            scroll_wheel.style.top = (screen.height * 0.6) + value * 4 + 'px';
         })
     </script>
 

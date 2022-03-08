@@ -91,6 +91,134 @@ section img#mountains_front {
     z-index: 10;
 }
 
+#intro_text {
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3vw;
+}
+
+#mouse-scroll {
+    style: block;
+}
+
+#mouse-scroll {
+    position: fixed;
+    margin: auto;
+    left: 50%;
+    top: 60%;
+    -webkit-transform: translateX(-50%);
+    z-index: 5;
+}
+
+#mouse-scroll span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    margin: 0 0 3px 5px;
+}
+
+#mouse-scroll .mouse {
+    height: 21px;
+    width: 14px;
+    border-radius: 10px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    border: 2px solid #ffffff;
+    top: 170px;
+}
+
+#mouse-scroll .down-arrow-1 {
+    margin-top: 6px;
+}
+
+#mouse-scroll .down-arrow-1,
+#mouse-scroll .down-arrow-2,
+#mouse-scroll .down-arrow-3 {
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite:
+}
+
+#mouse-croll .down-arrow-1 {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -webkit-animation-direction: alternate;
+}
+
+#mouse-scroll .down-arrow-2 {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+}
+
+#mouse-scroll .down-arrow-3 {
+    -webkit-animation-delay: .3s;
+    -moz-animation-dekay: .3s;
+    -webkit-animation-direction: alternate;
+}
+
+#mouse-scroll .mouse-in {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: #ffffff;
+    position: relative;
+}
+
+#mouse-scroll .mouse-in {
+    -webkit-animation: animated-mouse 1.2s ease infinite;
+    moz-animation: mouse-animated 1.2s ease infinite;
+}
+
+@-webkit-keyframes animated-mouse {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+@-webkit-keyframes mouse-scroll {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 #text {
     position: absolute;
     right: -620px;
@@ -202,7 +330,7 @@ section img#mountains_front {
 }
 
 .images *:hover {
-    transform: scale(1.5);
+    transform: scale(3);
 }
 
 .opensea_section {
@@ -229,8 +357,20 @@ section img#mountains_front {
     color: white;
 }
 
+.roadmap_and_story {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
 
 /* Roadmap */
+
+.roadmap {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
 
 .roadmap_description {
     text-align: center;
@@ -281,7 +421,7 @@ section img#mountains_front {
 }
 
 #btn_roadmap:hover::before {
-    content: "\1F440";
+    content: "🗺️";
 }
 
 
@@ -293,11 +433,20 @@ section img#mountains_front {
     font-family: 'Amatic SC', cursive;
     padding-left: 30px;
     margin-top: 20px;
+    margin-left: 8vw;
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
 }
 
 .Our_Story h2 {
     font-size: 6vw;
     margin-bottom: 3vh;
+    color: #fff;
+}
+
+.Our_Story p {
+    font-size: 1.5vw;
     color: #fff;
 }
 
@@ -311,7 +460,23 @@ section img#mountains_front {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    margin: 4px 2px;
+    margin-top: 5vh;
     border-radius: 7%;
+    transition-duration: 0.3s;
+}
+
+#btn_story:hover span {
+    display: none;
+}
+
+#btn_story:hover {
+    background-color: #08000a;
+    color: white;
+}
+
+#btn_story:hover::before {
+    content: "📖";
 }
 
 
